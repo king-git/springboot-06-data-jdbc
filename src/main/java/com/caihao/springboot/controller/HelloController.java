@@ -27,7 +27,6 @@ public class HelloController {
 
         List<Map<String, Object>> list = jdbcTemplate.queryForList("select * from dog ");
         System.err.println("list======"+list.toString());
-
         return list;
     }
 
