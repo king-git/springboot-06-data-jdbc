@@ -1,8 +1,12 @@
 spring:
   datasource:
     username: root
+    #家里
     password: 123456
-    url: jdbc:mysql://198.10.1.222:3306/testjdbc
+    url: jdbc:mysql://192.168.0.105:3306/testjdbc
+    #公司的
+    #password: 123456
+    #url: jdbc:mysql://198.10.1.222:3306/testjdbc
     driver-class-name: com.mysql.cj.jdbc.Driver
 #   type属性：自定义数据源
     type: com.alibaba.druid.pool.DruidDataSource
@@ -20,7 +24,7 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true
 #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
-    filters: stat,wall,log4j
+    filters: stat,wall
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
