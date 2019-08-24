@@ -15,7 +15,7 @@ import java.sql.SQLException;
 public class Springboot06DataJdbcApplicationTests {
 
     @Autowired
-    DataSource dataSource;
+    private DataSource dataSource;
 
 
     @Test
